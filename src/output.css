@@ -8,14 +8,8 @@
       "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-400: oklch(70.4% 0.191 22.216);
-    --color-red-500: oklch(63.7% 0.237 25.331);
-    --color-green-100: oklch(96.2% 0.044 156.743);
-    --color-green-400: oklch(79.2% 0.209 151.711);
-    --color-green-500: oklch(72.3% 0.219 149.579);
-    --color-pink-200: oklch(89.9% 0.061 343.231);
-    --color-pink-300: oklch(82.3% 0.12 346.018);
     --color-pink-500: oklch(65.6% 0.241 354.308);
+    --color-gray-500: oklch(55.1% 0.027 264.364);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -215,6 +209,9 @@
   .mx-\[30px\] {
     margin-inline: 30px;
   }
+  .my-\[16px\] {
+    margin-block: 16px;
+  }
   .my-\[40px\] {
     margin-block: 40px;
   }
@@ -227,6 +224,9 @@
   .mb-\[10px\] {
     margin-bottom: 10px;
   }
+  .mb-\[16px\] {
+    margin-bottom: 16px;
+  }
   .mb-\[20px\] {
     margin-bottom: 20px;
   }
@@ -235,6 +235,9 @@
   }
   .mb-\[40px\] {
     margin-bottom: 40px;
+  }
+  .mb-\[45px\] {
+    margin-bottom: 45px;
   }
   .ml-\[10px\] {
     margin-left: 10px;
@@ -269,9 +272,6 @@
   .h-\[100\%\] {
     height: 100%;
   }
-  .w-1 {
-    width: var(--spacing);
-  }
   .w-\[42px\] {
     width: 42px;
   }
@@ -290,6 +290,9 @@
   .w-\[296px\] {
     width: 296px;
   }
+  .w-\[1200px\] {
+    width: 1200px;
+  }
   .w-\[1300px\] {
     width: 1300px;
   }
@@ -305,12 +308,6 @@
   .resize {
     resize: both;
   }
-  .grid-cols-1 {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-  }
-  .grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
   .grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -325,6 +322,9 @@
   }
   .justify-end {
     justify-content: flex-end;
+  }
+  .gap-\[80px\] {
+    gap: 80px;
   }
   .rounded-\[5px\] {
     border-radius: 5px;
@@ -409,8 +409,14 @@
   .py-\[40px\] {
     padding-block: 40px;
   }
+  .py-\[80px\] {
+    padding-block: 80px;
+  }
   .pl-\[40px\] {
     padding-left: 40px;
+  }
+  .text-center {
+    text-align: center;
   }
   .text-\[12px\] {
     font-size: 12px;
@@ -430,6 +436,12 @@
   .text-\[56px\] {
     font-size: 56px;
   }
+  .text-\[63px\] {
+    font-size: 63px;
+  }
+  .text-\[64px\] {
+    font-size: 64px;
+  }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
@@ -448,6 +460,9 @@
   .text-\[\#1A2434\] {
     color: #1A2434;
   }
+  .text-\[\#8D054F\] {
+    color: #8D054F;
+  }
   .text-\[\#575455\] {
     color: #575455;
   }
@@ -456,6 +471,9 @@
   }
   .text-black {
     color: var(--color-black);
+  }
+  .text-gray-500 {
+    color: var(--color-gray-500);
   }
   .text-white {
     color: var(--color-white);
