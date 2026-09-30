@@ -8,14 +8,25 @@
       "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-400: oklch(70.4% 0.191 22.216);
+    --color-red-500: oklch(63.7% 0.237 25.331);
+    --color-red-600: oklch(57.7% 0.245 27.325);
     --color-pink-500: oklch(65.6% 0.241 354.308);
+    --color-gray-200: oklch(92.8% 0.006 264.531);
+    --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-gray-500: oklch(55.1% 0.027 264.364);
+    --color-gray-600: oklch(44.6% 0.03 256.802);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
     --font-weight-normal: 400;
+    --font-weight-semibold: 600;
     --font-weight-bold: 700;
+    --font-weight-black: 900;
     --tracking-wide: 0.025em;
+    --radius-2xl: 1rem;
+    --radius-3xl: 1.5rem;
+    --radius-4xl: 2rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --font-myfont: "MyFont";
@@ -212,6 +223,9 @@
   .my-\[16px\] {
     margin-block: 16px;
   }
+  .my-\[24px\] {
+    margin-block: 24px;
+  }
   .my-\[40px\] {
     margin-block: 40px;
   }
@@ -220,6 +234,9 @@
   }
   .mt-\[40px\] {
     margin-top: 40px;
+  }
+  .mb-4 {
+    margin-bottom: calc(var(--spacing) * 4);
   }
   .mb-\[10px\] {
     margin-bottom: 10px;
@@ -284,11 +301,17 @@
   .w-\[100\%\] {
     width: 100%;
   }
+  .w-\[100px\] {
+    width: 100px;
+  }
   .w-\[265px\] {
     width: 265px;
   }
   .w-\[296px\] {
     width: 296px;
+  }
+  .w-\[754px\] {
+    width: 754px;
   }
   .w-\[1200px\] {
     width: 1200px;
@@ -308,8 +331,20 @@
   .resize {
     resize: both;
   }
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
   .grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .grid-cols-9 {
+    grid-template-columns: repeat(9, minmax(0, 1fr));
+  }
+  .grid-cols-\[1fr\,1fr\] {
+    grid-template-columns: 1fr,1fr;
+  }
+  .grid-cols-\[1fr\] {
+    grid-template-columns: 1fr;
   }
   .flex-col {
     flex-direction: column;
@@ -320,11 +355,38 @@
   .justify-between {
     justify-content: space-between;
   }
+  .justify-center {
+    justify-content: center;
+  }
   .justify-end {
     justify-content: flex-end;
   }
+  .gap-\[10px\] {
+    gap: 10px;
+  }
+  .gap-\[24px\] {
+    gap: 24px;
+  }
   .gap-\[80px\] {
     gap: 80px;
+  }
+  .gap-x-\[10px\] {
+    column-gap: 10px;
+  }
+  .gap-x-\[24px\] {
+    column-gap: 24px;
+  }
+  .gap-y-\[24px\] {
+    row-gap: 24px;
+  }
+  .overflow-hidden {
+    overflow: hidden;
+  }
+  .rounded-3xl {
+    border-radius: var(--radius-3xl);
+  }
+  .rounded-4xl {
+    border-radius: var(--radius-4xl);
   }
   .rounded-\[5px\] {
     border-radius: 5px;
@@ -334,6 +396,10 @@
   }
   .rounded-\[50\%\] {
     border-radius: 50%;
+  }
+  .rounded-e-full {
+    border-start-end-radius: calc(infinity * 1px);
+    border-end-end-radius: calc(infinity * 1px);
   }
   .border {
     border-style: var(--tw-border-style);
@@ -373,8 +439,17 @@
   .bg-black {
     background-color: var(--color-black);
   }
+  .bg-gray-200 {
+    background-color: var(--color-gray-200);
+  }
   .bg-pink-500 {
     background-color: var(--color-pink-500);
+  }
+  .bg-red-500 {
+    background-color: var(--color-red-500);
+  }
+  .bg-red-600 {
+    background-color: var(--color-red-600);
   }
   .bg-white {
     background-color: var(--color-white);
@@ -382,14 +457,26 @@
   .p-5 {
     padding: calc(var(--spacing) * 5);
   }
+  .p-\[8px\] {
+    padding: 8px;
+  }
   .p-\[10px\] {
     padding: 10px;
+  }
+  .p-\[16px\] {
+    padding: 16px;
   }
   .p-\[80px\] {
     padding: 80px;
   }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
+  }
+  .px-\[24\] {
+    padding-inline: 24;
+  }
+  .px-\[24px\] {
+    padding-inline: 24px;
   }
   .px-\[30px\] {
     padding-inline: 30px;
@@ -436,11 +523,12 @@
   .text-\[56px\] {
     font-size: 56px;
   }
-  .text-\[63px\] {
-    font-size: 63px;
-  }
   .text-\[64px\] {
     font-size: 64px;
+  }
+  .font-black {
+    --tw-font-weight: var(--font-weight-black);
+    font-weight: var(--font-weight-black);
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
@@ -449,6 +537,10 @@
   .font-normal {
     --tw-font-weight: var(--font-weight-normal);
     font-weight: var(--font-weight-normal);
+  }
+  .font-semibold {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
   }
   .tracking-wide {
     --tw-tracking: var(--tracking-wide);
@@ -474,6 +566,9 @@
   }
   .text-gray-500 {
     color: var(--color-gray-500);
+  }
+  .text-gray-600 {
+    color: var(--color-gray-600);
   }
   .text-white {
     color: var(--color-white);
