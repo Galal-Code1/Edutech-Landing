@@ -16,13 +16,13 @@
           <a href="#about-us">About us</a>
         </li>
         <li class="mx-[30px]">
-          <a href="#">Our Class</a>
+          <a href="#our-class">Our Class</a>
         </li>
         <li class="mx-[30px]">
-          <a href="#">Blog</a>
+          <a href="#blog">Blog</a>
         </li>
         <li class="mx-[30px]">
-          <a href="#">Content</a>
+          <a href="#contact">Content</a>
         </li>
       </ul>
       <!-- search section -->
@@ -292,7 +292,7 @@
         </section>
       </div>
     </section>
-    <section class="our-class-section">
+    <section id="our-class" class="our-class-section">
       <div class="content w-[1200px] m-auto py-[80px]">
         <div
           class="flex justify-center text-center flex-col items-center mb-[40px]"
@@ -513,7 +513,7 @@
         </div>
       </div>
     </section>
-    <section class="blog-section">
+    <section id="blog" class="blog-section">
       <div class="content w-[1200px] m-auto py-[80px]">
         <div class="text-center mb-40px">
           <p class="text-[20px] text-gray-500">Blog</p>
@@ -622,15 +622,99 @@
         </div>
       </div>
     </section>
-    <div class="connect-with-us-section bg-[#8D054F] ">
-      <div class="content w-[1200px] py-[80px] flex justify-between m-auto items-center">
-        <h1 class="text-[36px] font-semibold text-white">Join the world largest<br> online learning platform</h1>
-        <div class="bg-[#DDB4CA] py-[8px] pl-[40px] pr-[8px] rounded-3xl flex items-center w-[500px]">
-          <img src="./assets/EnvelopeSimple.png" class="mr-[10px]">
-          <input type="text" placeholder="name@email.com" class="outline-0 py-[24px] flex-1 px-[5px]"/>
-          <button class="py-[24px] px-[48px] rounded-2xl bg-black text-white font-bold text-[20px] cursor-pointer">Join now</button>
+    <section id="contact" class="connect-with-us-section bg-[#8D054F]">
+      <div
+        class="content w-[1200px] py-[80px] flex justify-between m-auto items-center"
+      >
+        <h1 class="text-[36px] font-semibold text-white">
+          Join the world largest<br />
+          online learning platform
+        </h1>
+        <div
+          class="bg-[#DDB4CA] py-[8px] pl-[40px] pr-[8px] rounded-3xl flex items-center w-[500px]"
+        >
+          <img src="./assets/EnvelopeSimple.png" class="mr-[10px]" />
+          <input
+            type="text"
+            placeholder="name@email.com"
+            class="outline-0 py-[24px] flex-1 px-[5px]"
+          />
+          <button
+            class="py-[24px] px-[48px] rounded-2xl bg-black text-white font-bold text-[20px] cursor-pointer"
+          >
+            Join now
+          </button>
         </div>
       </div>
-    </div>
+    </section>
+    <footer class="bg-[#1A2434] py-[80px]">
+      <div
+        class="content w-[1200px] m-auto flex justify-between items-start gap-[80px]"
+      >
+        <div class="left-side flex-1">
+          <div class="flex items-center">
+            <img src="./assets/Logo.png" />
+            <h2 class="ml-[10px] text-white text-3xl font-semibold mb-[24px]">
+              Digilearn
+            </h2>
+          </div>
+          <p class="text-gray-600">
+            Unlock Digital Mastery Effortlessly! Explore and enhance your skills
+            with our user-friendly platform.
+          </p>
+        </div>
+        <div class="lists flex items-start flex-2 justify-between">
+          <ul>
+            <h1 class="text-[24px] font-bold text-white mb-[16px]">
+              Quick links
+            </h1>
+            <li class="text-xl text-gray-400 mb-[8px] cursor-pointer" onclick="location.href='#about-us'">About us</li>
+            <li class="text-xl text-gray-400 mb-[8px] cursor-pointer" onclick="location.href='#our-class'">Our Class</li>
+            <li class="text-xl text-gray-400 mb-[8px] cursor-pointer" onclick="location.href='#blog'">Blog</li>
+            <li class="text-xl text-gray-400 mb-[8px] cursor-pointer" onclick="location.href='#contact'">Contact</li>
+          </ul>
+          <ul>
+            <h1 class="text-[24px] font-bold text-white mb-[16px]">
+              Resources
+            </h1>
+            <li class="text-xl text-gray-400 mb-[8px] cursor-pointer">Support</li>
+            <li class="text-xl text-gray-400 mb-[8px] cursor-pointer">Privacy policy</li>
+            <li class="text-xl text-gray-400 mb-[8px] cursor-pointer">Terms & Conditions</li>
+          </ul>
+          <ul>
+            <h1 class="text-[24px] font-bold text-white mb-[16px]">
+              Social media
+            </h1>
+            <ul class="flex justify-between items-center gap-[8px]">
+              <li>
+                <a href="#">
+                  <img src="./assets/Facebook.png" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./assets/Twitter.png" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./assets/Instagram.png" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./assets/Linkedin.png" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./assets/Youtube.png" alt="" />
+                </a>
+              </li>
+            </ul>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
